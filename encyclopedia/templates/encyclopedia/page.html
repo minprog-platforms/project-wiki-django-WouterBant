@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    {% comment %} safe makes sure html is rendered and not displayed as code {% endcomment %}
+    {{ page | safe }}
+
+    <form action="{% url 'edit' %}" method="POST">
+        {% csrf_token %}
+        <input name="page" value="{{ title }}" type="hidden">
+        <input type="submit" value="Edit {{ title }}">
+    </form>
+{% endblock %}

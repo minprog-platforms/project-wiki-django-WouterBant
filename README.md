@@ -1,8 +1,12 @@
-# Application Name
+# Application Wiki
 
-TODO: Describe your application here.
+Entry page
+Index page
+Search
+New page
 
 
 ## Getting Started
 
-TODO: Describe steps to install requirements and get the application running.
+Make a virtual environment on your device and install django and markdown2 in this environment.
+To view the page run in your command prompt: python manage.py runserver and open the link.

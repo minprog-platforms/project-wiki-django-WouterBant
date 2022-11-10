@@ -1,19 +1,16 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
-    Encyclopedia
+    Search results
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
+    <h1>Pages</h1>
 
     <ul>
         {% for entry in entries %}
             {% comment %} go to present_page url and give the title of the entry {% endcomment %}
-            {% comment %} check if entry not empty, otherwise error {% endcomment %}
-            {% if entry %}
-                <li><a href="{% url 'present_page' title=entry %}">{{ entry }}</a></li>
-            {% endif %}
+            <li><a href="{% url 'present_page' title=entry %}">{{ entry }}</a></li>
         {% endfor %}
     </ul>
 

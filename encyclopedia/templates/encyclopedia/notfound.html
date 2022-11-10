@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Page not found
+{% endblock %}
+
+{% block body %}
+    <h1>Page Not Found</h1>
+
+    <ul>
+        {% for entry in entries %}
+            <li>{{ entry }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
