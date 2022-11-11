@@ -1,12 +1,11 @@
 # Application Wiki
 
-Entry page
-Index page
-Search
-New page
+Able to view, make, and edit pages using Markdown.
 
 
 ## Getting Started
 
-Make a virtual environment on your device and install django and markdown2 in this environment.
-To view the page run in your command prompt: python manage.py runserver and open the link.
+install python3
+pip3 install django
+pip3 install markdown2
+run in terminal: python manage.py runserver
